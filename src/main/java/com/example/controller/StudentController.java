@@ -1,6 +1,7 @@
 package com.example.controller;
 
 import com.example.dto.StudentRequest;
+import com.example.service.DavomatService;
 import com.example.service.StudentService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
@@ -18,9 +19,12 @@ public class StudentController {
 
     private final StudentService studentService;
 
+    private final DavomatService davomatService;
+
     @GetMapping()
     public String index( Model model ) {
         model.addAttribute("studentList", studentService.get());
+        davomatService.save();
         return "student_index";
     }
 

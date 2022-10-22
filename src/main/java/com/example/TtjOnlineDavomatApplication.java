@@ -16,11 +16,4 @@ public class TtjOnlineDavomatApplication {
         SpringApplication.run(TtjOnlineDavomatApplication.class, args);
     }
 
-    @Bean
-    CommandLineRunner run( DavomatService davomatService ) {
-        return args -> {
-            davomatService.save();
-        };
-    }
-
 }
