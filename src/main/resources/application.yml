@@ -7,3 +7,6 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+java:
+  runtime:
+    version: 17
