@@ -19,10 +19,18 @@ import java.time.LocalDateTime;
 public class Davomat {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue( strategy = GenerationType.AUTO )
     private Long id;
 
-    private Boolean exists = false;
+    private Boolean exists1 = false;
+
+    private Boolean exists2 = false;
+
+    private Boolean exists3 = false;
+
+    private Boolean exists4 = false;
+
+    private Boolean exists5 = false;
 
     private LocalDateTime createdAt = LocalDateTime.now();
 

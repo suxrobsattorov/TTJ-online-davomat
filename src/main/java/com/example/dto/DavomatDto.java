@@ -16,7 +16,11 @@ public class DavomatDto {
     private Long id;
     private String studentName;
     private String studentSurname;
-    private Boolean exists;
+    private Boolean exists1;
+    private Boolean exists2;
+    private Boolean exists3;
+    private Boolean exists4;
+    private Boolean exists5;
     private LocalDateTime createdAt;
     private Long studentId;
 }

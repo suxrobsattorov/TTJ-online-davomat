@@ -5,7 +5,6 @@ import com.example.dto.StudentResponse;
 import com.example.entity.Davomat;
 import com.example.repository.DavomatRepo;
 import lombok.RequiredArgsConstructor;
-import org.springframework.context.annotation.Bean;
 import org.springframework.stereotype.Service;
 
 import java.util.LinkedList;
@@ -56,7 +55,11 @@ public class DavomatServiceImpl implements DavomatService {
 
         Davomat davomat = getById(id);
 
-        davomat.setExists(!davomat.getExists());
+        davomat.setExists1(!davomat.getExists1());
+        davomat.setExists2(!davomat.getExists2());
+        davomat.setExists3(!davomat.getExists3());
+        davomat.setExists4(!davomat.getExists4());
+        davomat.setExists5(!davomat.getExists5());
 
         return toDto(davomatRepo.save(davomat));
     }
@@ -70,7 +73,11 @@ public class DavomatServiceImpl implements DavomatService {
         StudentResponse student = studentService.get(davomat.getStudentId());
         DavomatDto dto = new DavomatDto();
         dto.setId(davomat.getId());
-        dto.setExists(davomat.getExists());
+        dto.setExists1(davomat.getExists1());
+        dto.setExists2(davomat.getExists2());
+        dto.setExists3(davomat.getExists3());
+        dto.setExists4(davomat.getExists4());
+        dto.setExists5(davomat.getExists5());
         dto.setCreatedAt(davomat.getCreatedAt());
         dto.setStudentId(student.getId());
         dto.setStudentName(student.getName());
