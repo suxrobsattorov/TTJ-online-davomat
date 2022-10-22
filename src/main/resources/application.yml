@@ -1,13 +1,9 @@
 spring:
   datasource:
-    url: "jdbc:postgresql://localhost:5432/TTJ-online-davomat"
-    username: "JavaDbUser"
-    password: "root"
+    url: "jdbc:postgresql://ec2-54-228-32-29.eu-west-1.compute.amazonaws.com:5432/d819736dfhomeo"
+    username: "dmwckfagmxxinq"
+    password: "8d7462ad29b725947c14cafed4ac885238ec5445e87cb2decae1dd9fe9d08732"
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
-server:
-  error:
-    include-message: always
-  port: 8081
