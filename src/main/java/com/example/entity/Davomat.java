@@ -22,15 +22,7 @@ public class Davomat {
     @GeneratedValue( strategy = GenerationType.AUTO )
     private Long id;
 
-    private Boolean exists1 = false;
-
-    private Boolean exists2 = false;
-
-    private Boolean exists3 = false;
-
-    private Boolean exists4 = false;
-
-    private Boolean exists5 = false;
+    private Boolean exists = false;
 
     private LocalDateTime createdAt = LocalDateTime.now();
 

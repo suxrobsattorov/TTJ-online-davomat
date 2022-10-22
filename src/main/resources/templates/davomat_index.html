@@ -104,11 +104,7 @@
         <tr>
             <th>Name</th>
             <th>Surname</th>
-            <th>22.10.2022</th>
-            <th>23.10.2022</th>
-            <th>24.10.2022</th>
-            <th>25.10.2022</th>
-            <th>26.10.2022</th>
+            <th>exists</th>
         </tr>
         </thead>
         <tbody>
@@ -117,27 +113,7 @@
             <td th:text="${davomat.studentSurname}"></td>
             <td>
                 <a th:href="@{/davomat/edit/{id}(id=${davomat.id})}">
-                    <h3 th:text="${davomat.exists1}"></h3>
-                </a>
-            </td>
-            <td>
-                <a th:href="@{/davomat/edit/{id}(id=${davomat.id})}">
-                    <h3 th:text="${davomat.exists2}"></h3>
-                </a>
-            </td>
-            <td>
-                <a th:href="@{/davomat/edit/{id}(id=${davomat.id})}">
-                    <h3 th:text="${davomat.exists3}"></h3>
-                </a>
-            </td>
-            <td>
-                <a th:href="@{/davomat/edit/{id}(id=${davomat.id})}">
-                    <h3 th:text="${davomat.exists4}"></h3>
-                </a>
-            </td>
-            <td>
-                <a th:href="@{/davomat/edit/{id}(id=${davomat.id})}">
-                    <h3 th:text="${davomat.exists5}"></h3>
+                    <h3 th:text="${davomat.exists}"></h3>
                 </a>
             </td>
         </tr>
